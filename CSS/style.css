@@ -1,0 +1,155 @@
+* {
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #e5e7e9;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.head {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid #000; */
+  background-color: #85c1e9;
+}
+.company_logo {
+  /* border: 1px solid #000; */
+  width: 30%;
+}
+.company_logo img {
+  width: 45%;
+  cursor: pointer;
+}
+
+.navbar {
+  /* border: 1px solid #000; */
+  padding: 0.5rem;
+}
+.navbar ul li {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.3rem;
+  border: 1px solid #000;
+  background-color: #ffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navbar ul li:hover {
+  background-color: gray;
+  color: brown;
+}
+.container {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  background-image:linear-gradient(pink, blue, yellow);
+  /* border: 3px solid #000; */
+}
+
+.left h1 {
+  margin-top: 50px;
+  font-family: "Times New Roman", Times, serif;
+}
+.left p {
+  margin: 30px 0;
+  font-family: "Times New Roman", Times, serif;
+}
+.btn {
+  padding: 10px;
+  border-radius: 20px;
+  margin-left: 30px;
+  cursor: pointer;
+  background-color: #3498db;
+}
+
+.right {
+  /* border: 1px solid #000; */
+}
+.right img {
+  width: 95%;
+  margin-top: 3rem;
+}
+.cardBoxes {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: fit-content;
+}
+.innerBoxes {
+  background-color: #e5e7e9;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 150px;
+  height: 200px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 5px 10px 10px gray;
+}
+.innerBoxes img {
+  margin-top: 20px;
+}
+
+.innerBoxes p {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.foot {
+  background-color: #d5dbdb;
+  text-align: center;
+  padding: 15px;
+}
+.bottom-btn {
+  color: #ffff;
+  border-radius: 20px;
+  padding: 7px;
+  background-color: #000;
+}
+
+@media screen and (max-width: 800px) {
+  .company_logo {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .company_logo {
+    width: 65%;
+  }
+  .navbar {
+    padding: 0px;
+    display: none;
+  }
+  .navbar ul li {
+    margin-top: 10px;
+    padding: 4px;
+    margin-right: 20px;
+  }
+  .cardBoxes {
+    flex-direction: column;
+    align-items: center;
+    /* width: 2rem; */
+  }
+  .container {
+    height: auto;
+    padding-top: 30px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .left h1 {
+    position: absolute;
+    top: 5%;
+  }
+  .btn{
+    margin-bottom: 50px;
+  }
+}
